@@ -111,3 +111,25 @@ hr {
 .gear:hover {
   background-color: rgba(246, 246, 246, 0.874);
 }
+
+#gear-dropdown {
+  display: none;
+}
+
+#gear:hover .gear-dropdown-hidden {
+  background-color: grey;
+  display: block;
+  position: absolute;
+  flex-direction: column;
+}  
+
+#gear:hover #gear-dropdown li ul {
+  display: flex;
+  flex-direction: column;
+}
+
+#gear-dropdown:hover {
+  display: block;
+  flex-direction: column;
+}
+
